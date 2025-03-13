@@ -21,6 +21,7 @@ namespace AlmoxarifadoBackAPI.Controllers
         public IActionResult listaCategorias()
         {
             return Ok(_db.GetAll());
+
         }
 
         [HttpPost("/categoria")]
@@ -34,7 +35,7 @@ namespace AlmoxarifadoBackAPI.Controllers
         {
 
             var novaCategoria = new Categoria()
-            {               
+            {
                 Descricao = categoria.Descricao
             };
             //_categorias.Add(novaCategoria);
